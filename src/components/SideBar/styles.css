@@ -1,0 +1,280 @@
+.sidebar {
+  background: #f8faf9;
+  border-right: 1px solid #e7ecea;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.brand-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 27px 28px 25px;
+}
+
+.brand-mark {
+  width: 33px;
+  height: 33px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: #c9eb70;
+  color: #294017;
+  font-family: Manrope, sans-serif;
+  font-weight: 800;
+  transform: rotate(-7deg);
+}
+
+.brand-row strong {
+  display: block;
+  font: 800 20px Manrope, sans-serif;
+  letter-spacing: -1px;
+  line-height: 17px;
+}
+
+.brand-row strong span {
+  color: #9abf3c;
+}
+
+.brand-row small {
+  display: block;
+  color: #96a09f;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  margin-top: 5px;
+}
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 18px 25px;
+  border-top: 1px solid #edf0ef;
+  border-bottom: 1px solid #edf0ef;
+}
+
+.profile-copy {
+  flex: 1;
+}
+
+.profile-copy strong {
+  display: block;
+  font-size: 13px;
+}
+
+.profile-copy span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #84908f;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.online-dot {
+  background: #a5d24e;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.search-box {
+  margin: 22px 21px 16px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 13px;
+  background: #fff;
+  border: 1px solid #e5ebe8;
+  border-radius: 11px;
+  color: #8d9996;
+}
+
+.search-box input {
+  min-width: 0;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  color: #263432;
+  background: transparent;
+  font-size: 12px;
+}
+
+.search-box input::placeholder {
+  color: #a2acab;
+}
+
+.chat-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px 10px;
+  color: #73807d;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.new-chat {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #d8ef9f;
+  color: #5c772e;
+}
+
+.new-chat .icon {
+  width: 15px;
+}
+
+.chat-list {
+  padding: 0 12px;
+  overflow-y: auto;
+}
+
+.chat-preview {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 13px;
+  align-items: center;
+  border-radius: 13px;
+  text-align: left;
+  background: transparent;
+  color: inherit;
+}
+
+.chat-preview:hover {
+  background: #f0f5f1;
+}
+
+.chat-preview.active {
+  background: #e9f3e8;
+}
+
+.chat-preview-copy {
+  min-width: 0;
+  flex: 1;
+}
+
+.chat-preview-copy>div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chat-preview-copy strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.chat-preview-copy time {
+  margin-left: auto;
+  color: #99a4a2;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.chat-preview-copy>div:last-child {
+  margin-top: 5px;
+}
+
+.chat-preview-copy>div:last-child span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #879390;
+  font-size: 11px;
+}
+
+.chat-preview-copy b {
+  margin-left: auto;
+  display: grid;
+  place-items: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  color: #fff;
+  background: #9bc64c;
+  font-size: 10px;
+}
+
+.sidebar-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding: 22px 25px;
+  border-top: 1px solid #edf0ef;
+  color: #9ba6a4;
+  font-size: 10px;
+}
+
+.sidebar-footer span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.sidebar-footer i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #bdc7c4;
+}
+
+.sidebar-footer .connected i {
+  background: #9ed151;
+}
+
+.sidebar-footer button {
+  color: #75827f;
+  background: transparent;
+  font-size: 11px;
+}
+
+.sidebar-footer button span {
+  display: inline;
+  margin-left: 5px;
+  color: #9bc64c;
+  font-size: 16px;
+}
+
+@media (max-width:720px) {
+  .sidebar {
+    min-height: auto;
+  }
+
+  .chat-list {
+    max-height: 290px;
+  }
+
+  .brand-row {
+    padding: 21px 20px;
+  }
+
+  .profile-row {
+    padding: 15px 20px;
+  }
+
+  .search-box {
+    margin: 17px 16px 13px;
+  }
+
+  .chat-heading {
+    padding: 0 20px 8px;
+  }
+
+  .sidebar-footer {
+    padding: 17px 20px;
+  }
+}

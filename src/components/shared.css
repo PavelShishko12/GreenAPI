@@ -1,0 +1,56 @@
+.icon {
+  width: 19px;
+  height: 19px;
+}
+
+.icon-button {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  color: #84908f;
+  background: transparent;
+  border-radius: 10px;
+}
+
+.icon-button:hover {
+  background: #edf2ee;
+  color: #50615e;
+}
+
+.avatar {
+  flex: 0 0 auto;
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  color: #385054;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.avatar-profile {
+  background: #d9e8f0;
+  color: #557485;
+}
+
+.avatar-blue {
+  background: #d4e7f2;
+  color: #47748d;
+}
+
+.avatar-coral {
+  background: #f5d8d0;
+  color: #a8685e;
+}
+
+.avatar-green {
+  background: #dceacb;
+  color: #66834d;
+}
+
+.avatar-yellow {
+  background: #f4e4b8;
+  color: #9a7934;
+}
